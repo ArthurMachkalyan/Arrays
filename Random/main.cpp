@@ -3,7 +3,7 @@ using namespace std;
 using std::cout;
 using std::cin;
 //#define RAND
-#define SORTING
+//#define SORTING
 
 
 #define tab "\t"
@@ -101,5 +101,17 @@ void main() {
 	cout << endl;
 #endif // SORTING
 
+	const int n = 5;
+	int arr[n];
 
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand()%(80-70)+70;
+	}
+	
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;
 }
