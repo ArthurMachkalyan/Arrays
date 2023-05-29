@@ -3,7 +3,8 @@ using namespace std;
 using std::cout;
 using std::cin;
 //#define RAND
-//#define SORTING
+#define SORTING
+//#define UNIQUE_NUMBER
 
 
 #define tab "\t"
@@ -62,6 +63,9 @@ void main() {
 #endif // RAND
 
 #ifdef SORTING
+
+	//Сортировка методом выбора 
+
 	const int n = 5;
 	int arr[n];
 
@@ -101,6 +105,10 @@ void main() {
 	cout << endl;
 #endif // SORTING
 
+
+
+
+#ifdef UNIQUE_NUMBER
 	const int n = 5;
 	int arr[n];
 
@@ -114,4 +122,7 @@ void main() {
 		cout << arr[i] << tab;
 	}
 	cout << endl;
+#endif // UNIQUE_NUMBER
+
+
 }
