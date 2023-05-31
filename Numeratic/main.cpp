@@ -3,7 +3,8 @@ using namespace std;
 
 #define tab "\t"
 //#define BINARY
-#define REPEAT
+//#define REPEAT
+#define HEX
 void main() {
 	setlocale(LC_ALL, "");
 #ifdef BINARY
@@ -65,6 +66,21 @@ void main() {
 
 #endif // REPEAT
 
+#ifdef HEX
+	int decimal;
+	cout << "Введите десятичное число: "; cin >> decimal;
+	const int MAX_HEX_CAPACITY = 8;
+	int hex[MAX_HEX_CAPACITY] = {};
+	int	i = 0;
+	for (; decimal; i++)
+	{
+
+	}
+
+
+
+
+#endif // HEX
 
 
 }
