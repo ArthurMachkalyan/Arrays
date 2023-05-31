@@ -37,7 +37,7 @@ void main() {
 
 	for (int i = 0; i < n; i++)
 	{
-		arr[i]= rand() % 5;
+		arr[i]= rand() % 10;
 	}
 
 	for (int i = 0; i < n; i++)
@@ -46,10 +46,21 @@ void main() {
 	}
 	cout << endl << endl;;
 
-	int counter = 1;
 
 	for (int i = 0; i < n; i++)
 	{
+		bool met_before = false;
+		
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[i] = arr[j])
+			{
+				met_before = true;
+				break;
+			}
+		}
+		if (met_before)continue;
+	    int counter = 0;
 		for (int j = i+1; j < n; j++)
 		{
 			if (arr[i] == arr[j])
@@ -57,10 +68,9 @@ void main() {
 				counter++;
 			}
 		}
-		if (counter > 1)
+		if (counter)
 		{
-		cout << "Элемент" << " " << i << " встречается: " << counter << " раза" << endl;;
-		counter = 1;
+		cout << "Значение " << arr[i] << " повторяется: " << counter << " раз" << endl;;
 		}
 	}
 
@@ -72,11 +82,25 @@ void main() {
 	const int MAX_HEX_CAPACITY = 8;
 	int hex[MAX_HEX_CAPACITY] = {};
 	int	i = 0;
-	for (; decimal; i++)
+	for (; decimal; decimal /= 16)
 	{
-
+		hex[i++] = decimal % 16;
 	}
 
+	for (i--; i >= 0; i--)
+	{
+		switch (hex[i])
+		{
+		case 10: cout << "A"; break;
+		case 11: cout << "B"; break;
+		case 12: cout << "C"; break;
+		case 13: cout << "D"; break;
+		case 14: cout << "E"; break;
+		case 15: cout << "F"; break;
+		default: cout << hex[i];
+		}
+	}
+	cout << endl;
 
 
 
