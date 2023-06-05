@@ -101,9 +101,6 @@ void main() {
 		}
 	}
 	cout << endl;
-
-
-
 #endif // HEX
 
 
