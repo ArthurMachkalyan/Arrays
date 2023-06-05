@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniqueRand", "UniqueRand\Un
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays2", "Arrays2\Arrays2.vcxproj", "{D383D062-9805-499A-A49A-7466FF1EFE77}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrix", "Matrix\Matrix.vcxproj", "{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{D383D062-9805-499A-A49A-7466FF1EFE77}.Release|x64.Build.0 = Release|x64
 		{D383D062-9805-499A-A49A-7466FF1EFE77}.Release|x86.ActiveCfg = Release|Win32
 		{D383D062-9805-499A-A49A-7466FF1EFE77}.Release|x86.Build.0 = Release|Win32
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Debug|x64.ActiveCfg = Debug|x64
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Debug|x64.Build.0 = Debug|x64
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Debug|x86.ActiveCfg = Debug|Win32
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Debug|x86.Build.0 = Debug|Win32
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Release|x64.ActiveCfg = Release|x64
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Release|x64.Build.0 = Release|x64
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Release|x86.ActiveCfg = Release|Win32
+		{2C5357A4-C33D-4DA9-A0ED-14D50ABA7B07}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
