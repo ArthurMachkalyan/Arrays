@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 #define tab "\t"
@@ -42,8 +42,8 @@ void main() {
 		}
 
 		cout << endl;
-		cout << "Ñëîæåíèå ìàòðèö: " << endl << endl;
-		//Ñëîæåíèå ìàòðèö
+		cout << "Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†: " << endl << endl;
+		//Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†
 
 		for (int i = 0; i < ROWS; i++)
 		{
@@ -63,9 +63,9 @@ void main() {
 		}
 
 		cout << endl;
-		cout << "Âû÷èòàíèå ìàòðèö: " << endl << endl;
+		cout << "Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†: " << endl << endl;
 	
-		//Âû÷èòàíèå ìàòðèö
+		//Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†
 
 		for (int i = 0; i < ROWS; i++)
 		{
@@ -85,15 +85,15 @@ void main() {
 		}
 
 		cout << endl;
-		cout << "Óìíîæåíèå ìàòðèö: " << endl << endl;
+		cout << "Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†: " << endl << endl; //  Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ† Ð½Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ð»Ð¾ÑÑŒ 
 
 		for (int i = 0; i < ROWS; i++)
 		{
 			for (int j = 0; j < COLS; j++)
 			{
-				for (int k = j;  k < ROWS;  k++)
+				for (int k = 0;  k < ROWS;  k++)
 				{
-					MATRIX3[i][j] = (MATRIX1[i][j] * MATRIX2[k][i]) + (MATRIX1[k][j+1] * MATRIX2[k][j+1]);
+					MATRIX3[i][j] += MATRIX1[j][k] * MATRIX2[k][j];
 				}
 			}
 		}
